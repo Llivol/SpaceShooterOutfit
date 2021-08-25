@@ -22,7 +22,8 @@ public class PlayerShoot : MonoBehaviour
     {
         foreach (Transform shootPoint in shootPoints)
         {
-            Instantiate(bulletPrefab, shootPoint.position, shootPoint.rotation);
+            var bullet = Instantiate(bulletPrefab, shootPoint.position, shootPoint.rotation);
+            bullet.transform.parent = shootPoint;
         }
     }
 }
