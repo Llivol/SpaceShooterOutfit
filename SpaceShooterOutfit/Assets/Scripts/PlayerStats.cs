@@ -16,15 +16,21 @@ public class PlayerStats : Stats
         hasShield = shield.activeSelf;
     }
 
-    public override void TakeDamage(int damage)
+    public override void TakeDamage(int amount)
     {
         if (hasShield) SetShield(false);
         else
         {
-            base.TakeDamage(damage);
+            base.TakeDamage(amount);
             healthBar.value = hitPoints;
         }
 
+    }
+
+    public void Heal(int amount)
+    {
+        hitPoints = Mathf.Min(hitPoints + amount, maxHitPoints);
+        healthBar.value = hitPoints;
     }
 
     public void SetShield(bool value)
