@@ -1371,7 +1371,6 @@ MonoBehaviour:
   - {fileID: 2068160480}
   - {fileID: 1504931262}
   bulletContainer: {fileID: 820670337}
-  cooldown: 0
 --- !u!4 &1266040970 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4433942057210488, guid: f805c7b2f982faf43833878e4f22ae2a, type: 3}
