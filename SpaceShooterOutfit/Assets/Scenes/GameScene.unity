@@ -1352,7 +1352,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1510364872509504, guid: f805c7b2f982faf43833878e4f22ae2a, type: 3}
       propertyPath: m_Name
-      value: Playcer_Spaceship
+      value: Player_Spaceship
       objectReference: {fileID: 0}
     - target: {fileID: 4433942057210488, guid: f805c7b2f982faf43833878e4f22ae2a, type: 3}
       propertyPath: m_RootOrder
@@ -1721,11 +1721,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1266040967}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f20061db4b174041baa6ca75a30a1f2, type: 3}
+  m_Script: {fileID: 11500000, guid: 389783e935379c54d906f7a6b9a55f84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 1
-  HitPoints: 10
+  maxHitPoints: 10
+  healthBar: {fileID: 376079893}
 --- !u!4 &1266040970 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4433942057210488, guid: f805c7b2f982faf43833878e4f22ae2a, type: 3}
@@ -2007,7 +2008,7 @@ Canvas:
   m_GameObject: {fileID: 1470175057}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 1
+  m_RenderMode: 0
   m_Camera: {fileID: 963194227}
   m_PlaneDistance: 100
   m_PixelPerfect: 0

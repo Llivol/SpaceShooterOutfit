@@ -97,7 +97,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 1
-  HitPoints: 4
+  maxHitPoints: 4
 --- !u!65 &2722806193815506561
 BoxCollider:
   m_ObjectHideFlags: 0

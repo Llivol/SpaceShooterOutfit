@@ -1,16 +1,20 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Stats : MonoBehaviour
 {
     public int Damage;
-    public int HitPoints;
+    [SerializeField] protected int maxHitPoints;
+    protected int hitPoints;
 
-    public void TakeDamage(int damage)
+    protected virtual void Awake()
     {
-        HitPoints -= damage;
+        hitPoints = maxHitPoints;
+    }
 
-        if (HitPoints <= 0) Destroy(gameObject);
+    public virtual void TakeDamage(int damage)
+    {
+        hitPoints -= damage;
+
+        if (hitPoints <= 0) Destroy(gameObject);
     }
 }
