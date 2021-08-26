@@ -11,7 +11,6 @@ public class Asteroid : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        print(collision.gameObject.tag);
         if (collision.gameObject.tag == "Enemies" || collision.gameObject.tag == "Player")
         {
             collision.gameObject.GetComponent<Stats>().TakeDamage(stats.Damage);
