@@ -11,6 +11,9 @@ GameObject:
   - component: {fileID: 465686}
   - component: {fileID: 3300844}
   - component: {fileID: 2349010}
+  - component: {fileID: 4670183702855843989}
+  - component: {fileID: 7605054611459550100}
+  - component: {fileID: 6775662010942894842}
   m_Layer: 0
   m_Name: astre_9
   m_TagString: Asteroids
@@ -81,3 +84,46 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &4670183702855843989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 158218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f20061db4b174041baa6ca75a30a1f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 1
+  HitPoints: 4
+--- !u!65 &7605054611459550100
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 158218}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.3155913, y: 2.286605, z: 2.3725443}
+  m_Center: {x: -0.17254448, y: 0.118016094, z: 0.15450862}
+--- !u!54 &6775662010942894842
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 158218}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0

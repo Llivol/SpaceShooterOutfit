@@ -1371,6 +1371,20 @@ MonoBehaviour:
   - {fileID: 2068160480}
   - {fileID: 1504931262}
   bulletContainer: {fileID: 820670337}
+--- !u!114 &1266040969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1266040967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f20061db4b174041baa6ca75a30a1f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 1
+  HitPoints: 10
 --- !u!4 &1266040970 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4433942057210488, guid: f805c7b2f982faf43833878e4f22ae2a, type: 3}

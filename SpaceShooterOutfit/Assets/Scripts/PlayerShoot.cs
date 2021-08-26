@@ -24,6 +24,7 @@ public class PlayerShoot : MonoBehaviour
         {
             var bullet = Instantiate(bulletPrefab, shootPoint.position, shootPoint.rotation);
             bullet.transform.parent = bulletContainer;
+            bullet.GetComponent<Laser>().SetShooter(gameObject);
         }
     }
 }
