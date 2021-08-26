@@ -18,6 +18,6 @@ public class PlayerStats : Stats
     {
         base.TakeDamage(damage);
 
-        healthBar.value = maxHitPoints;
+        healthBar.value = hitPoints;
     }
 }
