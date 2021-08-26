@@ -6,7 +6,7 @@ public class PlayerShoot : MonoBehaviour
 {
     [SerializeField] private GameObject bulletPrefab;
     [SerializeField] private Transform[] shootPoints;
-    [SerializeField] private Transform bulletContainer;
+    [SerializeField] private AmmoContainer ammoContainer;
 
     private void Update()
     {
@@ -15,7 +15,7 @@ public class PlayerShoot : MonoBehaviour
 
     private bool canShoot()
     {
-        return true;
+        return ammoContainer.HasAmmo();
     }
 
     private void shoot()
@@ -23,8 +23,9 @@ public class PlayerShoot : MonoBehaviour
         foreach (Transform shootPoint in shootPoints)
         {
             var bullet = Instantiate(bulletPrefab, shootPoint.position, shootPoint.rotation);
-            bullet.transform.parent = bulletContainer;
+            bullet.transform.SetParent(transform.parent);
             bullet.GetComponent<Laser>().SetShooter(gameObject);
         }
+        ammoContainer.RemoveAmmo();
     }
 }

@@ -4,8 +4,10 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class PlayerStats : Stats
-{
+{   
+    public int MaxAmmo;
     [SerializeField] private Slider healthBar;
+    
 
     protected override void Awake()
     {
