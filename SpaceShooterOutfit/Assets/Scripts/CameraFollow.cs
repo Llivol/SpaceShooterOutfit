@@ -14,12 +14,12 @@ public class CameraFollow : MonoBehaviour
 
     private void FixedUpdate()
     {
-        Vector3 toPos = target.position + (target.rotation * offset);
-        Vector3 curPos = Vector3.Lerp(transform.position, toPos, movementSpeed * Time.deltaTime);
-        transform.position = curPos;
+        Vector3 desiredPosition = target.position + (target.rotation * offset);
+        Vector3 currentPosition = Vector3.Lerp(transform.position, desiredPosition, movementSpeed * Time.deltaTime);
+        transform.position = currentPosition;
 
-        Quaternion toRot = Quaternion.LookRotation(target.position - transform.position, target.up);
-        Quaternion curRot = Quaternion.Slerp(transform.rotation, toRot, rotationSpeed * Time.deltaTime);
-        transform.rotation = curRot;
+        Quaternion desiredRotation = Quaternion.LookRotation(target.position - transform.position, target.up);
+        Quaternion currentRotation = Quaternion.Slerp(transform.rotation, desiredRotation, rotationSpeed * Time.deltaTime);
+        transform.rotation = currentRotation;
     }
 }
