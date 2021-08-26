@@ -15,11 +15,11 @@ D:/Users/Usuario/Documents/GitHub/SpaceShooterOutfit/SpaceShooterOutfit
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-57299
+50461
 Successfully changed project path to: D:/Users/Usuario/Documents/GitHub/SpaceShooterOutfit/SpaceShooterOutfit
 D:/Users/Usuario/Documents/GitHub/SpaceShooterOutfit/SpaceShooterOutfit
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 26.04 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 23.82 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.11f1 (99c7afb366b3)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.11f1/Editor/Data/Resources/UnitySubsystems
@@ -35,405 +35,93 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.11f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.11f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56280
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56500
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.11f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.11f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002255 seconds.
+Registered in 0.002227 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 24.06 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 28.80 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  3.968 seconds
+- Completed reload, in  1.702 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.156883 seconds.
+Registered in 0.002400 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.28 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.44 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.833 seconds
+- Completed reload, in  0.842 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
-Refreshing native plugins compatible for Editor in 0.39 ms, found 2 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.28 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1388 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 64.8 MB.
-System memory in use after: 64.8 MB.
+Unloading 1392 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 65.5 MB.
+System memory in use after: 65.6 MB.
 
-Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 1821.
-Total: 1.791100 ms (FindLiveObjects: 0.145700 ms CreateObjectMapping: 0.042400 ms MarkObjects: 1.534100 ms  DeleteObjects: 0.068200 ms)
-
-========================================================================
-Received Import Request.
-  path: Assets/StarSparrow/Readme/ReadmeStarSparrow.asset
-  artifactKey: Guid(831b6df9656715346bac250feaa321a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StarSparrow/Readme/ReadmeStarSparrow.asset using Guid(831b6df9656715346bac250feaa321a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b74817a28306df1ab1687ff621574a7') in 0.038447 seconds
-  Import took 0.040724 seconds .
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 1828.
+Total: 1.781900 ms (FindLiveObjects: 0.163800 ms CreateObjectMapping: 0.043400 ms MarkObjects: 1.508000 ms  DeleteObjects: 0.065900 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 4.436500 seconds.
-  path: Assets/PACKS VOLS
-  artifactKey: Guid(dd58cfac609f7874da381e39ab956029) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PACKS VOLS using Guid(dd58cfac609f7874da381e39ab956029) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5e362ee81f8a9be70ddef0a85cb7c6a') in 0.004749 seconds
-  Import took 0.006793 seconds .
+  path: Assets/Prefabs/LaserPlayer.prefab
+  artifactKey: Guid(fc7ce556af173084f962c998e5590a76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/LaserPlayer.prefab using Guid(fc7ce556af173084f962c998e5590a76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41c8f5c7f2927fec5922d70645e50895') in 0.101481 seconds
+  Import took 0.118401 seconds .
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 1.74 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 12 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 41.4 MB.
+System memory in use after: 41.5 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 1836.
+Total: 1.765100 ms (FindLiveObjects: 0.131200 ms CreateObjectMapping: 0.036200 ms MarkObjects: 1.565100 ms  DeleteObjects: 0.032100 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.005619 seconds.
-  path: Assets/PACKS VOLS
-  artifactKey: Guid(dd58cfac609f7874da381e39ab956029) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PACKS VOLS using Guid(dd58cfac609f7874da381e39ab956029) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5e362ee81f8a9be70ddef0a85cb7c6a') in 0.002541 seconds
-  Import took 0.004790 seconds .
+  Time since last request: 27.132634 seconds.
+  path: Assets/Prefabs/LaserPlayer.prefab
+  artifactKey: Guid(fc7ce556af173084f962c998e5590a76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/LaserPlayer.prefab using Guid(fc7ce556af173084f962c998e5590a76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc93cce38e38f6f110b762a2a8161523') in 0.007742 seconds
+  Import took 0.024536 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002222 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.31 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.772 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.29 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1387 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 68.6 MB.
+System memory in use after: 68.7 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 1839.
+Total: 1.749000 ms (FindLiveObjects: 0.134600 ms CreateObjectMapping: 0.036600 ms MarkObjects: 1.535200 ms  DeleteObjects: 0.041800 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.820720 seconds.
-  path: Assets/Scenes
-  artifactKey: Guid(ddcb1043c9a660943a39351ab1613743) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes using Guid(ddcb1043c9a660943a39351ab1613743) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aaa22b4040a57aa9ffe0257e6da1957a') in 0.007629 seconds
-  Import took 0.010933 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000325 seconds.
-  path: Assets/Scenes
-  artifactKey: Guid(ddcb1043c9a660943a39351ab1613743) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes using Guid(ddcb1043c9a660943a39351ab1613743) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aaa22b4040a57aa9ffe0257e6da1957a') in 0.002180 seconds
-  Import took 0.005534 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.379436 seconds.
-  path: Assets/SkySerie Freebie
-  artifactKey: Guid(66b8f82671be3a14a8dc0a247bfa27e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SkySerie Freebie using Guid(66b8f82671be3a14a8dc0a247bfa27e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f53bbcc766c941a69c4d7dd3a34e4be0') in 0.005331 seconds
-  Import took 0.007496 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.352881 seconds.
-  path: Assets/StarSparrow
-  artifactKey: Guid(68ba141d95b38104d9d463ad4786bd32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StarSparrow using Guid(68ba141d95b38104d9d463ad4786bd32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54eddeae280f7ce5188cf53b676f4584') in 0.007692 seconds
-  Import took 0.009973 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.533032 seconds.
-  path: Assets/SkySerie Freebie/6SidedFluffball.mat
-  artifactKey: Guid(efd1c33efd2d58340b88804268e6833f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SkySerie Freebie/6SidedFluffball.mat using Guid(efd1c33efd2d58340b88804268e6833f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '011f9c61c35735fa1d07f187937420ef') in 0.425945 seconds
-  Import took 0.428095 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000266 seconds.
-  path: Assets/SkySerie Freebie/HighFantasy.mat
-  artifactKey: Guid(e2341a9d03e86ec4290c72b1e22bbc7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SkySerie Freebie/HighFantasy.mat using Guid(e2341a9d03e86ec4290c72b1e22bbc7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23d1460df69cb1eadb0c09e57e601539') in 0.179314 seconds
-  Import took 0.198663 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000252 seconds.
-  path: Assets/SkySerie Freebie/UnderTheSea4k.mat
-  artifactKey: Guid(119ec07f1c7ed204db46bd8465fd5a50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SkySerie Freebie/UnderTheSea4k.mat using Guid(119ec07f1c7ed204db46bd8465fd5a50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4e4e97a715eb8eff5c2957bcc70f6f0') in 0.266991 seconds
-  Import took 0.270481 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000253 seconds.
-  path: Assets/SkySerie Freebie/UnearthlyRed.mat
-  artifactKey: Guid(5d133deeaa66ed445853e946ff25e073) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SkySerie Freebie/UnearthlyRed.mat using Guid(5d133deeaa66ed445853e946ff25e073) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '034b5464eb8b5a00fc6b3db63b728c2e') in 0.335408 seconds
-  Import took 0.353899 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000184 seconds.
-  path: Assets/SkySerie Freebie/CosmicCoolCloud.mat
-  artifactKey: Guid(f531e09e2ad2fb440b4eed7605863143) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SkySerie Freebie/CosmicCoolCloud.mat using Guid(f531e09e2ad2fb440b4eed7605863143) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63880b7a3fa59b8f99848cfe8f6cfe09') in 0.378131 seconds
-  Import took 0.381404 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000239 seconds.
-  path: Assets/SkySerie Freebie/SunlessCirruscover.mat
-  artifactKey: Guid(4e154bf235e41704bbd6bbc6fd6c63f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SkySerie Freebie/SunlessCirruscover.mat using Guid(4e154bf235e41704bbd6bbc6fd6c63f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d8e28744d20ece833a32cfdba683f13') in 0.294846 seconds
-  Import took 0.309434 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000322 seconds.
-  path: Assets/SkySerie Freebie/6SidedMegaSun.mat
-  artifactKey: Guid(c52c5d7968fa6c9499b0b5752f899bfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SkySerie Freebie/6SidedMegaSun.mat using Guid(c52c5d7968fa6c9499b0b5752f899bfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8b4be7f6d60dc408cb1cc1ad57ae67f') in 0.150614 seconds
-  Import took 0.153260 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000238 seconds.
-  path: Assets/SkySerie Freebie/DayInTheClouds.mat
-  artifactKey: Guid(3e5399bd195de7649b874f58c1b9f8a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SkySerie Freebie/DayInTheClouds.mat using Guid(3e5399bd195de7649b874f58c1b9f8a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c11b10a37681a6c4bd0772a2b247a486') in 0.286225 seconds
-  Import took 0.289660 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000234 seconds.
-  path: Assets/SkySerie Freebie/Cloudymorning.mat
-  artifactKey: Guid(d9dca9ae1786c394f9e79c637aa9a7bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SkySerie Freebie/Cloudymorning.mat using Guid(d9dca9ae1786c394f9e79c637aa9a7bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6af09fd466da4335a26b320574808b01') in 0.271448 seconds
-  Import took 0.275335 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000227 seconds.
-  path: Assets/SkySerie Freebie/CoriolisNight4k.mat
-  artifactKey: Guid(d4454f71d85928744be7771e2143dab7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SkySerie Freebie/CoriolisNight4k.mat using Guid(d4454f71d85928744be7771e2143dab7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9bb8cd57333affc9df041e53898a2087') in 0.315405 seconds
-  Import took 0.318855 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000272 seconds.
-  path: Assets/SkySerie Freebie/SkyhighFluffycloudField.mat
-  artifactKey: Guid(f15c336556dd74f40aaca655f7767970) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SkySerie Freebie/SkyhighFluffycloudField.mat using Guid(f15c336556dd74f40aaca655f7767970) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20a3a53430a49042f81a8b4d02277a29') in 0.369852 seconds
-  Import took 0.373325 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000250 seconds.
-  path: Assets/SkySerie Freebie/PlanetaryEarth.mat
-  artifactKey: Guid(16bc8a9d5451ca44d8f70575adbece3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SkySerie Freebie/PlanetaryEarth.mat using Guid(16bc8a9d5451ca44d8f70575adbece3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4af97cb89d4309e1d01e57ac494b7e5a') in 0.362720 seconds
-  Import took 0.366236 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000202 seconds.
-  path: Assets/SkySerie Freebie/DarkStorm.mat
-  artifactKey: Guid(2039a0ad0a9d05549928b70362f54902) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SkySerie Freebie/DarkStorm.mat using Guid(2039a0ad0a9d05549928b70362f54902) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '707c0c4e4214f47be11d0708a2eaadc3') in 0.261469 seconds
-  Import took 0.265052 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000246 seconds.
-  path: Assets/SkySerie Freebie/AmbienceExposure.mat
-  artifactKey: Guid(72deae4d18418f94688abef8e8483df0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SkySerie Freebie/AmbienceExposure.mat using Guid(72deae4d18418f94688abef8e8483df0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd16d9949c0484bdbd3bac0c7515c4fb6') in 0.269429 seconds
-  Import took 0.273621 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000221 seconds.
-  path: Assets/SkySerie Freebie/CloudedSunGlow.mat
-  artifactKey: Guid(e391f00234292cc4f935308c11cf0e54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SkySerie Freebie/CloudedSunGlow.mat using Guid(e391f00234292cc4f935308c11cf0e54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14711aef6e87c1ee3183cd62f71e69cd') in 0.348617 seconds
-  Import took 0.353495 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000295 seconds.
-  path: Assets/SkySerie Freebie/FluffballDay.mat
-  artifactKey: Guid(20d4f77b9022eab48b4d94599ed4bf82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SkySerie Freebie/FluffballDay.mat using Guid(20d4f77b9022eab48b4d94599ed4bf82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b06a7d1eedf9760aac5f2ad02aaaaf59') in 0.278138 seconds
-  Import took 0.281877 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000203 seconds.
-  path: Assets/SkySerie Freebie/CasualDay.mat
-  artifactKey: Guid(85cf0b004bc4a654b9e501efcce47902) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SkySerie Freebie/CasualDay.mat using Guid(85cf0b004bc4a654b9e501efcce47902) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3023f97ef9d70dc9eb8c0b015fa8a2a2') in 0.325865 seconds
-  Import took 0.329989 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000270 seconds.
-  path: Assets/SkySerie Freebie/MegaSun.mat
-  artifactKey: Guid(cede08c9fc471e64884909cd4bbeaf59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SkySerie Freebie/MegaSun.mat using Guid(cede08c9fc471e64884909cd4bbeaf59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a9af155bfd8ae5562d73b7d4d501d0e') in 0.286007 seconds
-  Import took 0.290387 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.531622 seconds.
-  path: Assets/Scenes/SampleScene.unity
-  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85059f4f9e1a832ed95adaa0d25c5c4c') in 0.005330 seconds
-  Import took 0.007824 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.721233 seconds.
-  path: Assets/Scenes/GameScene.unity
-  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/GameScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '682366d9821b0309fbf90d664b092be1') in 0.005632 seconds
-  Import took 0.007756 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 75.090027 seconds.
-  path: Assets/StarSparrow/Materials/BonusContent/TinniuqPlanet.mat
-  artifactKey: Guid(58bc1c6f4cc25b942bb7eb6b75c68156) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StarSparrow/Materials/BonusContent/TinniuqPlanet.mat using Guid(58bc1c6f4cc25b942bb7eb6b75c68156) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8acfd3824a97f7d80e9ea0a71026cb5') in 0.222169 seconds
-  Import took 0.226160 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000217 seconds.
-  path: Assets/StarSparrow/Materials/Extra/StarSparrow_Yellow.mat
-  artifactKey: Guid(5953a6e817e87be4195c31da8fdce334) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StarSparrow/Materials/Extra/StarSparrow_Yellow.mat using Guid(5953a6e817e87be4195c31da8fdce334) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc466645a11142b8fcea4dcc5e29d90c') in 0.026258 seconds
-  Import took 0.028953 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000206 seconds.
-  path: Assets/StarSparrow/Materials/StarSparrow_White.mat
-  artifactKey: Guid(2bd34ca215750fc48902c734d2d5d80f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StarSparrow/Materials/StarSparrow_White.mat using Guid(2bd34ca215750fc48902c734d2d5d80f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a654ccfa00c1d2f6d13f7bb75f879454') in 0.025235 seconds
-  Import took 0.027480 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.202899 seconds.
-  path: Assets/StarSparrow/Materials/Extra/StarSparrow_Orange.mat
-  artifactKey: Guid(8b52c4a2cbd2a8248b7c6e782e73497e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StarSparrow/Materials/Extra/StarSparrow_Orange.mat using Guid(8b52c4a2cbd2a8248b7c6e782e73497e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc3de617bc1ec614e54f9ef46698733f') in 0.022584 seconds
-  Import took 0.025420 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000234 seconds.
-  path: Assets/StarSparrow/Materials/StarSparrow_Purple.mat
-  artifactKey: Guid(d215bd3bb42e9764da6cb4f2e19fe1fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StarSparrow/Materials/StarSparrow_Purple.mat using Guid(d215bd3bb42e9764da6cb4f2e19fe1fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c3c07dd98f34c43e6dbe93435b1e83e') in 0.023832 seconds
-  Import took 0.026223 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000259 seconds.
-  path: Assets/StarSparrow/Materials/StarSparrow_Red.mat
-  artifactKey: Guid(14cc321f15ae44a4d8ead98d7550ee77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StarSparrow/Materials/StarSparrow_Red.mat using Guid(14cc321f15ae44a4d8ead98d7550ee77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71ede1504516d36950a1cd0df7591bb2') in 0.023861 seconds
-  Import took 0.026295 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.657922 seconds.
-  path: Assets/StarSparrow/Materials/Extra/StarSparrow_Cyan.mat
-  artifactKey: Guid(d58bf68b17f9a4240aaeb5c200c9a12c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StarSparrow/Materials/Extra/StarSparrow_Cyan.mat using Guid(d58bf68b17f9a4240aaeb5c200c9a12c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7945a9af3cfb05c15cf8286356456c1f') in 0.031884 seconds
-  Import took 0.034572 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000267 seconds.
-  path: Assets/StarSparrow/Materials/StarSparrow_Grey.mat
-  artifactKey: Guid(12dffc4c817ab7e4294a82570ef30b58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StarSparrow/Materials/StarSparrow_Grey.mat using Guid(12dffc4c817ab7e4294a82570ef30b58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b0285d941d5ca0b79ea81e1c5cf04bb') in 0.022472 seconds
-  Import took 0.025229 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000278 seconds.
-  path: Assets/StarSparrow/Materials/StarSparrow_Green.mat
-  artifactKey: Guid(ec39a84ad2f7de748af283edd7ffa3c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StarSparrow/Materials/StarSparrow_Green.mat using Guid(ec39a84ad2f7de748af283edd7ffa3c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '304685c2585bf60bb5c6a3a7c91656d6') in 0.024417 seconds
-  Import took 0.027576 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.023456 seconds.
-  path: Assets/StarSparrow/Materials/Extra/StarSparrow_Black.mat
-  artifactKey: Guid(020568ce6bb9b3245a24630d5282ca24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StarSparrow/Materials/Extra/StarSparrow_Black.mat using Guid(020568ce6bb9b3245a24630d5282ca24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '290791868f89be461ed0402efb320051') in 0.020026 seconds
-  Import took 0.022682 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000254 seconds.
-  path: Assets/StarSparrow/Materials/StarSparrow_Blue.mat
-  artifactKey: Guid(69d393aa2d52fd34f80a48e88145a81c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StarSparrow/Materials/StarSparrow_Blue.mat using Guid(69d393aa2d52fd34f80a48e88145a81c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d8f33aa3973e14f360b96abc7c4c589') in 0.023275 seconds
-  Import took 0.026274 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.529671 seconds.
-  path: Assets/StarSparrow/Materials/BonusContent/Missile.mat
-  artifactKey: Guid(30d351457dfac9d40a8b07e6426fd177) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StarSparrow/Materials/BonusContent/Missile.mat using Guid(30d351457dfac9d40a8b07e6426fd177) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c128fbaf2b200a3ceef8b5cd691012c9') in 0.010996 seconds
-  Import took 0.013243 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000265 seconds.
-  path: Assets/PACKS VOLS/Mobile Astre Pack vol. 1/Models/Materials/No Name.mat
-  artifactKey: Guid(03dddb14c321ff045a4e5c9b6da1eb1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PACKS VOLS/Mobile Astre Pack vol. 1/Models/Materials/No Name.mat using Guid(03dddb14c321ff045a4e5c9b6da1eb1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9873093b1e8dc4413e1ba5d8afb84f1') in 0.192540 seconds
-  Import took 0.194439 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.154153 seconds.
-  path: Assets/StarSparrow/Materials/BonusContent/Mine Sample 1.mat
-  artifactKey: Guid(82c97815f01775d4899d78255a373dfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StarSparrow/Materials/BonusContent/Mine Sample 1.mat using Guid(82c97815f01775d4899d78255a373dfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b75c585439d8b79e75ca17d8e79dbb4c') in 0.017231 seconds
-  Import took 0.020557 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000282 seconds.
-  path: Assets/StarSparrow/Materials/BonusContent/Mine Sample 2.mat
-  artifactKey: Guid(7da0d403d4fb0da40ac018d557c6db89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StarSparrow/Materials/BonusContent/Mine Sample 2.mat using Guid(7da0d403d4fb0da40ac018d557c6db89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c2fdab1ab9bc58f7e53225fd7a00a4b') in 0.013481 seconds
-  Import took 0.015644 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.295121 seconds.
-  path: Assets/SkySerie Freebie/ExampleScenes/SceneObjects/Full.mat
-  artifactKey: Guid(1b27a20a436b4c64b882a6f739bf91de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SkySerie Freebie/ExampleScenes/SceneObjects/Full.mat using Guid(1b27a20a436b4c64b882a6f739bf91de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee0c05d29178b1214a939622f83acf40') in 0.038805 seconds
-  Import took 0.053580 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000265 seconds.
-  path: Assets/StarSparrow/Materials/BonusContent/Grey.mat
-  artifactKey: Guid(6b0bf81b9bf769c4cb75da722d4530a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StarSparrow/Materials/BonusContent/Grey.mat using Guid(6b0bf81b9bf769c4cb75da722d4530a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6275d852905c72443a3153a060ecd62') in 0.008921 seconds
-  Import took 0.011393 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.325753 seconds.
-  path: Assets/StarSparrow/Materials/BonusContent/FlyingInsect_Purple.mat
-  artifactKey: Guid(cb69702e662a4114aa3a332d2da74996) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StarSparrow/Materials/BonusContent/FlyingInsect_Purple.mat using Guid(cb69702e662a4114aa3a332d2da74996) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c773c42cec82a34a883dc8c0e8bd1e6d') in 0.095966 seconds
-  Import took 0.099055 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.490634 seconds.
-  path: Assets/StarSparrow/Materials/BonusContent/CloudsRed.mat
-  artifactKey: Guid(191ced9846689714398ed909c5e9284a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StarSparrow/Materials/BonusContent/CloudsRed.mat using Guid(191ced9846689714398ed909c5e9284a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4d49ba498e0dca7f00eb2e583aa52e1') in 0.194067 seconds
-  Import took 0.197009 seconds .
+  Time since last request: 47.601385 seconds.
+  path: Assets/Prefabs/LaserPlayer.prefab
+  artifactKey: Guid(fc7ce556af173084f962c998e5590a76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/LaserPlayer.prefab using Guid(fc7ce556af173084f962c998e5590a76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '401f4692341dbfa8469c4144eb32f3d6') in 0.039558 seconds
+  Import took 0.042145 seconds .
 

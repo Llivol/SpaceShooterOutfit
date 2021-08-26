@@ -6,7 +6,7 @@ public class PlayerShoot : MonoBehaviour
 {
     [SerializeField] private GameObject bulletPrefab;
     [SerializeField] private Transform[] shootPoints;
-    [SerializeField] private float cooldown;
+    [SerializeField] private Transform bulletContainer;
 
     private void Update()
     {
@@ -23,7 +23,7 @@ public class PlayerShoot : MonoBehaviour
         foreach (Transform shootPoint in shootPoints)
         {
             var bullet = Instantiate(bulletPrefab, shootPoint.position, shootPoint.rotation);
-            bullet.transform.parent = shootPoint;
+            bullet.transform.parent = bulletContainer;
         }
     }
 }
