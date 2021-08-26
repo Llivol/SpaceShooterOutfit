@@ -5,8 +5,10 @@ public class PlayerStats : Stats
 {
     public int MaxAmmo;
     private bool hasShield;
+    private int ammo;
     [SerializeField] private GameObject shield;
     [SerializeField] private Slider healthBar;
+    [SerializeField] private AmmoContainer ammoContainer;
 
     protected override void Awake()
     {
@@ -14,6 +16,7 @@ public class PlayerStats : Stats
         healthBar.maxValue = maxHitPoints;
         healthBar.value = maxHitPoints;
         hasShield = shield.activeSelf;
+        ammo = MaxAmmo;
     }
 
     public override void TakeDamage(int amount)
@@ -37,5 +40,22 @@ public class PlayerStats : Stats
     {
         hasShield = value;
         shield.SetActive(value);
+    }
+
+    public void AddAmmo(int amount)
+    {
+        ammo = Mathf.Min(ammo + amount, MaxAmmo);
+        ammoContainer.AddAmmo(amount);
+    }
+
+    public void RemoveAmmo()
+    {
+        ammo--;
+        ammoContainer.RemoveAmmo();
+    }
+
+    public bool HasAmmo()
+    {
+        return ammo > 0;
     }
 }

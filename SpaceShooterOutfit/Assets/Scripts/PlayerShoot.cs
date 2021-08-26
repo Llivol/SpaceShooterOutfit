@@ -1,12 +1,15 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerShoot : MonoBehaviour
 {
     [SerializeField] private GameObject bulletPrefab;
     [SerializeField] private Transform[] shootPoints;
-    [SerializeField] private AmmoContainer ammoContainer;
+    private PlayerStats stats;
+
+    private void Awake()
+    {
+        stats = GetComponent<PlayerStats>();
+    }
 
     private void Update()
     {
@@ -15,7 +18,7 @@ public class PlayerShoot : MonoBehaviour
 
     private bool canShoot()
     {
-        return ammoContainer.HasAmmo();
+        return stats.HasAmmo();
     }
 
     private void shoot()
@@ -26,6 +29,6 @@ public class PlayerShoot : MonoBehaviour
             bullet.transform.SetParent(transform.parent);
             bullet.GetComponent<Laser>().SetShooter(gameObject);
         }
-        ammoContainer.RemoveAmmo();
+        stats.RemoveAmmo();
     }
 }

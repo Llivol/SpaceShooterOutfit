@@ -21,7 +21,11 @@ public class AmmoContainer : MonoBehaviour
 
     public void AddAmmo(int amount)
     {
-
+        for (int i = 0; i < amount && transform.childCount < playerStats.MaxAmmo; i++)
+        {
+            var bullet = Instantiate(ammoPrefab);
+            bullet.transform.SetParent(transform);
+        }
     }
 
     public void RemoveAmmo()
