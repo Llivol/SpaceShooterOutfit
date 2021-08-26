@@ -1564,6 +1564,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player_Spaceship
       objectReference: {fileID: 0}
+    - target: {fileID: 1510364872509504, guid: f805c7b2f982faf43833878e4f22ae2a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1692945755674982, guid: f805c7b2f982faf43833878e4f22ae2a, type: 3}
       propertyPath: m_TagString
       value: Player
@@ -2138,6 +2142,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   torque: 16
   thrust: 128
+  minCameraFov: 58
+  maxCameraFov: 60
 --- !u!4 &1273774274 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6620638635270892081, guid: 9516adbd58b3b2340bd891d5448ef15d, type: 3}
