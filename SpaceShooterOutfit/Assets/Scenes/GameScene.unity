@@ -1312,7 +1312,8 @@ MonoBehaviour:
   - {fileID: 296760245}
   - {fileID: 885462649}
   - {fileID: 594042593}
-  offset: 4
+  waypointOffset: 2
+  saeftyDistance: 20
 --- !u!1 &693127159
 GameObject:
   m_ObjectHideFlags: 0
@@ -3482,7 +3483,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 20
+  m_Radius: 30
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1738518005
 MonoBehaviour:
@@ -3974,7 +3975,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 30
+  m_Radius: 80
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2068160479
 GameObject:
