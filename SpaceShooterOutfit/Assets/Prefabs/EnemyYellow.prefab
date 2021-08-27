@@ -410,20 +410,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &2870283952077395041
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1724805880837588438}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f20061db4b174041baa6ca75a30a1f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Damage: 5
-  maxHitPoints: 20
 --- !u!114 &1723034047605849900
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -463,6 +449,21 @@ MonoBehaviour:
   - {fileID: 1723034047929928826}
   - {fileID: 1723034046773911326}
   cooldown: 1
+--- !u!114 &2870283952077395041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1724805880837588438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f20061db4b174041baa6ca75a30a1f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 5
+  maxHitPoints: 20
+  score: 25
 --- !u!1001 &1723034047605849888
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -24,10 +24,16 @@ public class PlayerStats : Stats
         if (hasShield) SetShield(false);
         else
         {
-            base.TakeDamage(amount);
+            hitPoints -= amount;
             healthBar.value = hitPoints;
-        }
 
+            if (hitPoints <= 0)
+            {
+                GameManager.Instance.IncreaseScore(score);
+                GameManager.Instance.GameOver();
+                Destroy(gameObject);
+            }
+        }
     }
 
     public void Heal(int amount)

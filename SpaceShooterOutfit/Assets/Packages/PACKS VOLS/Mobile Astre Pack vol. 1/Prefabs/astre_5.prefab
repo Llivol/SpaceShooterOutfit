@@ -98,6 +98,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Damage: 2
   maxHitPoints: 4
+  score: 2
 --- !u!65 &9999352518155184
 BoxCollider:
   m_ObjectHideFlags: 0

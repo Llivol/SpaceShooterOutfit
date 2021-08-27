@@ -486,6 +486,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Damage: 10
   maxHitPoints: 30
+  score: 25
 --- !u!114 &6309686272821276340
 MonoBehaviour:
   m_ObjectHideFlags: 0
