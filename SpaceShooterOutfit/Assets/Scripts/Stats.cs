@@ -14,7 +14,6 @@ public class Stats : MonoBehaviour
     public virtual void TakeDamage(int damage)
     {
         hitPoints -= damage;
-        print(transform.name + " take damage. CurHP: " + hitPoints);
 
         if (hitPoints <= 0) Destroy(gameObject);
     }
