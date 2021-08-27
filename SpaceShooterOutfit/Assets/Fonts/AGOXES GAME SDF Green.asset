@@ -94,8 +94,8 @@ Material:
     m_Colors:
     - _ClipRect: {r: -32767, g: -32767, b: 32767, a: 32767}
     - _EnvMatrixRotation: {r: 0, g: 0, b: 0, a: 0}
-    - _FaceColor: {r: 0.6792453, g: 0.0032039948, b: 0.22156304, a: 1}
-    - _GlowColor: {r: 1, g: 0, b: 0.079761505, a: 0.5}
+    - _FaceColor: {r: 0.10893285, g: 1, b: 0, a: 1}
+    - _GlowColor: {r: 0.010703921, g: 1, b: 0, a: 0.5}
     - _MaskCoord: {r: 0, g: 0, b: 32767, a: 32767}
     - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
     - _ReflectFaceColor: {r: 0, g: 0, b: 0, a: 1}
@@ -113,11 +113,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
-  m_Name: AGOXES GAME SDF Pink 1
+  m_Name: AGOXES GAME SDF Green
   m_EditorClassIdentifier: 
-  hashCode: 1307736341
+  hashCode: 1760954947
   material: {fileID: -8316937112030451230}
-  materialHashCode: -580869739
+  materialHashCode: 366679939
   m_Version: 1.1.0
   m_SourceFontFileGUID: 9b6a92adf11841145aa0f8cbc52e6662
   m_SourceFontFile_EditorRef: {fileID: 12800000, guid: 9b6a92adf11841145aa0f8cbc52e6662, type: 3}
