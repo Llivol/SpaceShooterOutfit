@@ -10,6 +10,14 @@ public class PlayerStats : Stats
     [SerializeField] private Slider healthBar;
     [SerializeField] private AmmoContainer ammoContainer;
 
+    [Header("Audio")]
+    private AudioSource audioSource;
+    [SerializeField] private AudioClip healSfx;
+    [SerializeField] private AudioClip shieldSfx;
+    [SerializeField] private AudioClip breakShieldSfx;
+    [SerializeField] private AudioClip rechargeSfx;
+
+
     protected override void Awake()
     {
         base.Awake();
@@ -17,6 +25,7 @@ public class PlayerStats : Stats
         healthBar.value = maxHitPoints;
         hasShield = shield.activeSelf;
         ammo = MaxAmmo;
+        audioSource = GetComponent<AudioSource>();
     }
 
     public override void TakeDamage(int amount)
@@ -40,18 +49,21 @@ public class PlayerStats : Stats
     {
         hitPoints = Mathf.Min(hitPoints + amount, maxHitPoints);
         healthBar.value = hitPoints;
+        playSfx(healSfx);
     }
 
     public void SetShield(bool value)
     {
         hasShield = value;
         shield.SetActive(value);
+        playSfx((value) ? shieldSfx : breakShieldSfx);
     }
 
     public void AddAmmo(int amount)
     {
         ammo = Mathf.Min(ammo + amount, MaxAmmo);
         ammoContainer.AddAmmo(amount);
+        playSfx(rechargeSfx);
     }
 
     public void RemoveAmmo()
@@ -63,5 +75,11 @@ public class PlayerStats : Stats
     public bool HasAmmo()
     {
         return ammo > 0;
+    }
+
+    private void playSfx(AudioClip clip)
+    {
+        audioSource.clip = clip;
+        audioSource.Play();
     }
 }
