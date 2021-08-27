@@ -487,6 +487,7 @@ MonoBehaviour:
   Damage: 5
   maxHitPoints: 30
   score: 25
+  explosionPrefab: {fileID: 8227728198313913948, guid: be5548fc958acac4da9724b635031779, type: 3}
 --- !u!114 &6309686272821276340
 MonoBehaviour:
   m_ObjectHideFlags: 0
