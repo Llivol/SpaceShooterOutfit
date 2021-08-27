@@ -400,7 +400,6 @@ MonoBehaviour:
   - {fileID: 0}
   waypointOffset: 2
   saeftyDistance: 20
-  isChasing: 0
 --- !u!114 &237973378108556993
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -483,9 +482,45 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3005991335006366903, guid: 5706df97cdf27ba49a0f927eb658626d, type: 3}
+      propertyPath: m_TagString
+      value: Enemies
+      objectReference: {fileID: 0}
     - target: {fileID: 3105106886016448093, guid: 5706df97cdf27ba49a0f927eb658626d, type: 3}
       propertyPath: m_Name
       value: StarSparrow14
+      objectReference: {fileID: 0}
+    - target: {fileID: 3105106886016448093, guid: 5706df97cdf27ba49a0f927eb658626d, type: 3}
+      propertyPath: m_TagString
+      value: Enemies
+      objectReference: {fileID: 0}
+    - target: {fileID: 4138145329602797214, guid: 5706df97cdf27ba49a0f927eb658626d, type: 3}
+      propertyPath: m_TagString
+      value: Enemies
+      objectReference: {fileID: 0}
+    - target: {fileID: 4553720247652790465, guid: 5706df97cdf27ba49a0f927eb658626d, type: 3}
+      propertyPath: m_TagString
+      value: Enemies
+      objectReference: {fileID: 0}
+    - target: {fileID: 5024131340089874924, guid: 5706df97cdf27ba49a0f927eb658626d, type: 3}
+      propertyPath: m_TagString
+      value: Enemies
+      objectReference: {fileID: 0}
+    - target: {fileID: 5104182444077407680, guid: 5706df97cdf27ba49a0f927eb658626d, type: 3}
+      propertyPath: m_TagString
+      value: Enemies
+      objectReference: {fileID: 0}
+    - target: {fileID: 5430531881656002986, guid: 5706df97cdf27ba49a0f927eb658626d, type: 3}
+      propertyPath: m_TagString
+      value: Enemies
+      objectReference: {fileID: 0}
+    - target: {fileID: 7410412663955226813, guid: 5706df97cdf27ba49a0f927eb658626d, type: 3}
+      propertyPath: m_TagString
+      value: Enemies
+      objectReference: {fileID: 0}
+    - target: {fileID: 8038947508313072864, guid: 5706df97cdf27ba49a0f927eb658626d, type: 3}
+      propertyPath: m_TagString
+      value: Enemies
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5706df97cdf27ba49a0f927eb658626d, type: 3}

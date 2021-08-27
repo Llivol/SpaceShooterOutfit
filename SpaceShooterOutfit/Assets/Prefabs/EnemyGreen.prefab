@@ -484,7 +484,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f20061db4b174041baa6ca75a30a1f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Damage: 10
+  Damage: 5
   maxHitPoints: 30
   score: 25
 --- !u!114 &6309686272821276340
@@ -527,7 +527,6 @@ MonoBehaviour:
   - {fileID: 6309686272523466312}
   waypointOffset: 2
   saeftyDistance: 20
-  isChasing: 0
 --- !u!1001 &6309686272821276345
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -535,9 +534,45 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6309686273147918430}
     m_Modifications:
+    - target: {fileID: 1146472748622732, guid: 4d54efa43b03b1845b929768cf25e790, type: 3}
+      propertyPath: m_TagString
+      value: Enemies
+      objectReference: {fileID: 0}
+    - target: {fileID: 1169556215081944, guid: 4d54efa43b03b1845b929768cf25e790, type: 3}
+      propertyPath: m_TagString
+      value: Enemies
+      objectReference: {fileID: 0}
+    - target: {fileID: 1202799341646300, guid: 4d54efa43b03b1845b929768cf25e790, type: 3}
+      propertyPath: m_TagString
+      value: Enemies
+      objectReference: {fileID: 0}
+    - target: {fileID: 1533984329984650, guid: 4d54efa43b03b1845b929768cf25e790, type: 3}
+      propertyPath: m_TagString
+      value: Enemies
+      objectReference: {fileID: 0}
+    - target: {fileID: 1580905579487154, guid: 4d54efa43b03b1845b929768cf25e790, type: 3}
+      propertyPath: m_TagString
+      value: Enemies
+      objectReference: {fileID: 0}
+    - target: {fileID: 1628053368788072, guid: 4d54efa43b03b1845b929768cf25e790, type: 3}
+      propertyPath: m_TagString
+      value: Enemies
+      objectReference: {fileID: 0}
+    - target: {fileID: 1767286799649650, guid: 4d54efa43b03b1845b929768cf25e790, type: 3}
+      propertyPath: m_TagString
+      value: Enemies
+      objectReference: {fileID: 0}
+    - target: {fileID: 1909575854269166, guid: 4d54efa43b03b1845b929768cf25e790, type: 3}
+      propertyPath: m_TagString
+      value: Enemies
+      objectReference: {fileID: 0}
     - target: {fileID: 1970447681998018, guid: 4d54efa43b03b1845b929768cf25e790, type: 3}
       propertyPath: m_Name
       value: StarSparrow5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1970447681998018, guid: 4d54efa43b03b1845b929768cf25e790, type: 3}
+      propertyPath: m_TagString
+      value: Enemies
       objectReference: {fileID: 0}
     - target: {fileID: 4674827468582762, guid: 4d54efa43b03b1845b929768cf25e790, type: 3}
       propertyPath: m_RootOrder

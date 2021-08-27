@@ -394,7 +394,7 @@ Transform:
   m_Father: {fileID: 1723034047645613518}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &1723034047605849903
+--- !u!54 &4350929548901211900
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -410,7 +410,22 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &1723034047605849900
+--- !u!114 &4567681347992708043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1724805880837588438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f20061db4b174041baa6ca75a30a1f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 5
+  maxHitPoints: 20
+  score: 25
+--- !u!114 &6853345726644022454
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -422,6 +437,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4b1d9d1e60afcf4a88c4e37d2f3ad00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rigidBody: {fileID: 4350929548901211900}
   torque: 1
   thrust: 64
   waypoints:
@@ -431,8 +447,7 @@ MonoBehaviour:
   - {fileID: 1723034047546516695}
   waypointOffset: 2
   saeftyDistance: 20
-  isChasing: 0
---- !u!114 &1723034047605849901
+--- !u!114 &8028682320335906310
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -449,21 +464,6 @@ MonoBehaviour:
   - {fileID: 1723034047929928826}
   - {fileID: 1723034046773911326}
   cooldown: 1
---- !u!114 &2870283952077395041
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1724805880837588438}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f20061db4b174041baa6ca75a30a1f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Damage: 5
-  maxHitPoints: 20
-  score: 25
 --- !u!1001 &1723034047605849888
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -471,6 +471,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1723034047645613518}
     m_Modifications:
+    - target: {fileID: 1223473052968074, guid: c79905ec17c169a49b75177b6cf0d524, type: 3}
+      propertyPath: m_TagString
+      value: Enemies
+      objectReference: {fileID: 0}
+    - target: {fileID: 1508734977801910, guid: c79905ec17c169a49b75177b6cf0d524, type: 3}
+      propertyPath: m_TagString
+      value: Enemies
+      objectReference: {fileID: 0}
+    - target: {fileID: 1528797578046954, guid: c79905ec17c169a49b75177b6cf0d524, type: 3}
+      propertyPath: m_TagString
+      value: Enemies
+      objectReference: {fileID: 0}
+    - target: {fileID: 1799981609980374, guid: c79905ec17c169a49b75177b6cf0d524, type: 3}
+      propertyPath: m_TagString
+      value: Enemies
+      objectReference: {fileID: 0}
+    - target: {fileID: 1865462502189246, guid: c79905ec17c169a49b75177b6cf0d524, type: 3}
+      propertyPath: m_TagString
+      value: Enemies
+      objectReference: {fileID: 0}
     - target: {fileID: 1917106948373238, guid: c79905ec17c169a49b75177b6cf0d524, type: 3}
       propertyPath: m_Name
       value: Enemy0
