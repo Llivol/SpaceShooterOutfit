@@ -17,6 +17,11 @@ public class PlayerStats : Stats
     [SerializeField] private AudioClip breakShieldSfx;
     [SerializeField] private AudioClip rechargeSfx;
 
+    [Header("Particles")]
+    [SerializeField] private GameObject smokeThin1;
+    [SerializeField] private GameObject smokeThin2;
+    [SerializeField] private GameObject smokeThick1;
+    [SerializeField] private GameObject smokeThick2;
 
     protected override void Awake()
     {
@@ -36,6 +41,8 @@ public class PlayerStats : Stats
             hitPoints -= amount;
             healthBar.value = hitPoints;
 
+            setParticles();
+
             if (hitPoints <= 0)
             {
                 GameManager.Instance.IncreaseScore(score);
@@ -49,6 +56,7 @@ public class PlayerStats : Stats
     {
         hitPoints = Mathf.Min(hitPoints + amount, maxHitPoints);
         healthBar.value = hitPoints;
+        setParticles();
         playSfx(healSfx);
     }
 
@@ -81,5 +89,13 @@ public class PlayerStats : Stats
     {
         audioSource.clip = clip;
         audioSource.Play();
+    }
+
+    private void setParticles()
+    {
+        smokeThin1.SetActive(hitPoints < .8 * maxHitPoints);
+        smokeThin2.SetActive(hitPoints < .6 * maxHitPoints);
+        smokeThick1.SetActive(hitPoints < .4 * maxHitPoints);
+        smokeThick2.SetActive(hitPoints < .2 * maxHitPoints);
     }
 }

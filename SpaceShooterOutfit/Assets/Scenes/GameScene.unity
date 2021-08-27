@@ -5173,6 +5173,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3904936752556656578, guid: 17057e25bd5673442ba9da82280a1d1e, type: 3}
+      propertyPath: InitialModule.gravityModifier.scalar
+      value: -0.98
+      objectReference: {fileID: 0}
+    - target: {fileID: 6006913395392385898, guid: 17057e25bd5673442ba9da82280a1d1e, type: 3}
+      propertyPath: InitialModule.gravityModifier.scalar
+      value: -0.98
+      objectReference: {fileID: 0}
+    - target: {fileID: 7837333576513065757, guid: 17057e25bd5673442ba9da82280a1d1e, type: 3}
+      propertyPath: moveWithTransform
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7837333576513065757, guid: 17057e25bd5673442ba9da82280a1d1e, type: 3}
+      propertyPath: InitialModule.gravityModifier.scalar
+      value: -0.98
+      objectReference: {fileID: 0}
+    - target: {fileID: 8405532672566400220, guid: 17057e25bd5673442ba9da82280a1d1e, type: 3}
+      propertyPath: moveWithTransform
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8405532672566400220, guid: 17057e25bd5673442ba9da82280a1d1e, type: 3}
+      propertyPath: InitialModule.gravityModifier.scalar
+      value: -0.98
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17057e25bd5673442ba9da82280a1d1e, type: 3}
 --- !u!1001 &1723034048026229302
