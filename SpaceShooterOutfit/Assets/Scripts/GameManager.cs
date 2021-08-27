@@ -24,7 +24,7 @@ public class GameManager : MonoBehaviour
         score += amount;
         scoreText.text = String.Format(SCORE_TEMPLATE, score);
 
-        Invoke("checkEnemiesLeft", .5f);
+        Invoke("checkEnemiesLeft", 1f);
     }
 
     public void GameOver()
