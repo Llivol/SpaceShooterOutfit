@@ -18,7 +18,7 @@ public class PlayerShoot : MonoBehaviour
 
     private bool canShoot()
     {
-        return stats.HasAmmo();
+        return Time.timeScale > 0 && stats.HasAmmo();
     }
 
     private void shoot()

@@ -4810,6 +4810,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1724805880837588438, guid: 8b9ec7c15d8ca574b97dacd2cd19bce6, type: 3}
+      propertyPath: m_Name
+      value: StarSparrow7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8b9ec7c15d8ca574b97dacd2cd19bce6, type: 3}
 --- !u!1001 &3452999370071895100

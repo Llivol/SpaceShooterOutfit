@@ -281,7 +281,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 389783e935379c54d906f7a6b9a55f84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Damage: 3
+  Damage: 2
   maxHitPoints: 100
   score: 0
   MaxAmmo: 100

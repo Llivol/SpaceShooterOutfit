@@ -20,7 +20,6 @@ public class Laser : MonoBehaviour
         if (collision.gameObject == shooter) return;
         if (collision.gameObject.tag == "Asteroids" || collision.gameObject.tag == "Enemies" || collision.gameObject.tag == "Player")
         {
-            print("hit: " + collision.gameObject.name);
             collision.gameObject.GetComponent<Stats>().TakeDamage(laserStats.Damage);
             Destroy(gameObject);
         }

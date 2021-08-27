@@ -9,7 +9,6 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject gameOverPanel;
     [SerializeField] private GameObject victoryPanel;
     [SerializeField] private TextMeshProUGUI scoreText;
-    [SerializeField] private Transform enemyContainer;
 
     public static GameManager Instance = null;
 
@@ -25,21 +24,29 @@ public class GameManager : MonoBehaviour
         score += amount;
         scoreText.text = String.Format(SCORE_TEMPLATE, score);
 
-        if (enemyContainer.childCount == 0) Victory();
+        Invoke("checkEnemiesLeft", .5f);
     }
 
     public void GameOver()
     {
         gameOverPanel.SetActive(true);
+        Time.timeScale = 0;
+    }
+
+    private void checkEnemiesLeft()
+    {
+        if (GameObject.FindGameObjectsWithTag("Enemies").Length == 0) Victory();
     }
 
     public void Victory()
     {
         victoryPanel.SetActive(true);
+        Time.timeScale = 0;
     }
 
     public void Restart()
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 

@@ -437,7 +437,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4b1d9d1e60afcf4a88c4e37d2f3ad00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rigidBody: {fileID: 4350929548901211900}
   torque: 1
   thrust: 64
   waypoints:
@@ -473,23 +472,23 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1223473052968074, guid: c79905ec17c169a49b75177b6cf0d524, type: 3}
       propertyPath: m_TagString
-      value: Enemies
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 1508734977801910, guid: c79905ec17c169a49b75177b6cf0d524, type: 3}
       propertyPath: m_TagString
-      value: Enemies
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 1528797578046954, guid: c79905ec17c169a49b75177b6cf0d524, type: 3}
       propertyPath: m_TagString
-      value: Enemies
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 1799981609980374, guid: c79905ec17c169a49b75177b6cf0d524, type: 3}
       propertyPath: m_TagString
-      value: Enemies
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 1865462502189246, guid: c79905ec17c169a49b75177b6cf0d524, type: 3}
       propertyPath: m_TagString
-      value: Enemies
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 1917106948373238, guid: c79905ec17c169a49b75177b6cf0d524, type: 3}
       propertyPath: m_Name
