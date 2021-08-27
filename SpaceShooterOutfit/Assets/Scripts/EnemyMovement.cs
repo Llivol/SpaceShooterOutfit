@@ -10,6 +10,7 @@ public class EnemyMovement : MonoBehaviour
     [SerializeField] private float offset;
     private Rigidbody rb;
     private int curPoint = 0;
+    private bool isChasing = false;
     private Transform target;
 
     private void Awake()
@@ -19,9 +20,12 @@ public class EnemyMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        target = waypoints[curPoint];
-        if (Vector3.Distance(target.position, transform.position) < offset) selectNextWaypoint();
-        
+        if (!isChasing)
+        {
+            target = waypoints[curPoint];
+            if (Vector3.Distance(target.position, transform.position) < offset) selectNextWaypoint();
+        }
+
         move();
         rotate();
     }
@@ -44,5 +48,15 @@ public class EnemyMovement : MonoBehaviour
         if (curPoint >= waypoints.Length) curPoint = 0;
 
         target = waypoints[curPoint];
+    }
+
+    public void StartChasing(Transform chaseTarget)
+    {
+        isChasing = true;
+        target = chaseTarget;
+    }
+    public void StopChasing()
+    {
+        isChasing = true;
     }
 }
