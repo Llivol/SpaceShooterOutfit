@@ -4,6 +4,7 @@ public class Laser : MonoBehaviour
 {
     private Stats laserStats;
     private GameObject shooter;
+    [SerializeField] protected GameObject hitPrefab;
 
     private void Start()
     {
@@ -21,6 +22,8 @@ public class Laser : MonoBehaviour
         if (collision.gameObject.tag == "Asteroids" || collision.gameObject.tag == "Enemies" || collision.gameObject.tag == "Player")
         {
             collision.gameObject.GetComponent<Stats>().TakeDamage(laserStats.Damage);
+            var hit = Instantiate(hitPrefab, transform.position, transform.rotation);
+            hit.transform.SetParent(transform.parent);
             Destroy(gameObject);
         }
     }
