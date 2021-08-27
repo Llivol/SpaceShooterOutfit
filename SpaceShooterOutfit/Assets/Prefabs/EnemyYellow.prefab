@@ -206,61 +206,6 @@ Transform:
   m_Father: {fileID: 1723034048272812176}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &1723034047605849903
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1724805880837588438}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 4
-  m_AngularDrag: 32
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!114 &1723034047605849900
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1724805880837588438}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e4b1d9d1e60afcf4a88c4e37d2f3ad00, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  torque: 1
-  thrust: 64
-  waypoints:
-  - {fileID: 1723034047894011063}
-  - {fileID: 1723034047769315715}
-  - {fileID: 1723034047284161615}
-  - {fileID: 1723034047546516695}
-  waypointOffset: 2
-  saeftyDistance: 20
-  isChasing: 0
---- !u!114 &1723034047605849901
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1724805880837588438}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17578c117b6f67e429bfbebec20a7d75, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 8804731157731905016, guid: 6bc985a28a3fb9d44a628fc2f91e285f, type: 3}
-  shootPoints:
-  - {fileID: 1723034047929928826}
-  - {fileID: 1723034046773911326}
-  cooldown: 1
 --- !u!1 &1723034047645613505
 GameObject:
   m_ObjectHideFlags: 0
@@ -449,6 +394,75 @@ Transform:
   m_Father: {fileID: 1723034047645613518}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &1723034047605849903
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1724805880837588438}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 4
+  m_AngularDrag: 32
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &2870283952077395041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1724805880837588438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f20061db4b174041baa6ca75a30a1f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 5
+  maxHitPoints: 20
+--- !u!114 &1723034047605849900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1724805880837588438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4b1d9d1e60afcf4a88c4e37d2f3ad00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  torque: 1
+  thrust: 64
+  waypoints:
+  - {fileID: 1723034047894011063}
+  - {fileID: 1723034047769315715}
+  - {fileID: 1723034047284161615}
+  - {fileID: 1723034047546516695}
+  waypointOffset: 2
+  saeftyDistance: 20
+  isChasing: 0
+--- !u!114 &1723034047605849901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1724805880837588438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17578c117b6f67e429bfbebec20a7d75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 8804731157731905016, guid: 6bc985a28a3fb9d44a628fc2f91e285f, type: 3}
+  shootPoints:
+  - {fileID: 1723034047929928826}
+  - {fileID: 1723034046773911326}
+  cooldown: 1
 --- !u!1001 &1723034047605849888
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -514,13 +528,13 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 5953a6e817e87be4195c31da8fdce334, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c79905ec17c169a49b75177b6cf0d524, type: 3}
---- !u!1 &1724805880837588438 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1917106948373238, guid: c79905ec17c169a49b75177b6cf0d524, type: 3}
-  m_PrefabInstance: {fileID: 1723034047605849888}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1722149817401769846 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4288594156929110, guid: c79905ec17c169a49b75177b6cf0d524, type: 3}
+  m_PrefabInstance: {fileID: 1723034047605849888}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1724805880837588438 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1917106948373238, guid: c79905ec17c169a49b75177b6cf0d524, type: 3}
   m_PrefabInstance: {fileID: 1723034047605849888}
   m_PrefabAsset: {fileID: 0}

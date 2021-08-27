@@ -2175,9 +2175,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 389783e935379c54d906f7a6b9a55f84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Damage: 1
-  maxHitPoints: 10
-  MaxAmmo: 50
+  Damage: 2
+  maxHitPoints: 100
+  MaxAmmo: 100
   shield: {fileID: 1033819699}
   healthBar: {fileID: 376079893}
   ammoContainer: {fileID: 1758943796}

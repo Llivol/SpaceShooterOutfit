@@ -41,7 +41,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca2a397a7c805d844974b9de5e951001, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ammoAmount: 25
+  ammoAmount: 50
 --- !u!1001 &6620638635270762677
 PrefabInstance:
   m_ObjectHideFlags: 0
