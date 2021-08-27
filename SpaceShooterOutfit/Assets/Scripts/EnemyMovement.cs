@@ -11,7 +11,7 @@ public class EnemyMovement : MonoBehaviour
     [SerializeField] private float saeftyDistance;
     private Rigidbody rb;
     private int curPoint = 0;
-    private bool isChasing = false;
+    [SerializeField] private bool isChasing = false;
     private Transform target;
 
     private void Awake()
@@ -60,6 +60,6 @@ public class EnemyMovement : MonoBehaviour
     }
     public void StopChasing()
     {
-        isChasing = true;
+        isChasing = false;
     }
 }

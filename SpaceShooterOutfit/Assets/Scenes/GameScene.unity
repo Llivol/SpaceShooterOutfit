@@ -1376,6 +1376,7 @@ MonoBehaviour:
   - {fileID: 594042593}
   waypointOffset: 2
   saeftyDistance: 20
+  isChasing: 0
 --- !u!114 &670205211
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1403,7 +1404,7 @@ GameObject:
   m_Component:
   - component: {fileID: 693127160}
   m_Layer: 0
-  m_Name: Enemy
+  m_Name: Enemy0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
