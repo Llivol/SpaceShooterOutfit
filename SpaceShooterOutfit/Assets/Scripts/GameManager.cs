@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject gameOverPanel;
     [SerializeField] private GameObject victoryPanel;
     [SerializeField] private GameObject pausePanel;
+    [SerializeField] private AudioSource backgroundMusic;
     [SerializeField] private TextMeshProUGUI scoreText;
 
     public static GameManager Instance = null;
@@ -69,6 +70,7 @@ public class GameManager : MonoBehaviour
     {
         isPaused = value;
         pausePanel.SetActive(value);
+        backgroundMusic.volume = (value) ? .2f : .5f;
         Time.timeScale = (value) ? 0 : 1;
     }
 
