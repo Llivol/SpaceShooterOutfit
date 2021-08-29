@@ -40,20 +40,28 @@ public class GameManager : MonoBehaviour
         Invoke("checkEnemiesLeft", 1f);
     }
 
-    public void GameOver()
-    {
-        gameOverPanel.SetActive(true);
-        Time.timeScale = 0;
-    }
-
     private void checkEnemiesLeft()
     {
         if (GameObject.FindGameObjectsWithTag("Enemies").Length == 0) Victory();
     }
 
+    private void checkHighScore()
+    {
+        int curHighScore = PlayerPrefs.GetInt("highscore");
+        if (curHighScore < score) PlayerPrefs.SetInt("highscore", score);
+    }
+
+    public void GameOver()
+    {
+        gameOverPanel.SetActive(true);
+        checkHighScore();
+        Time.timeScale = 0;
+    }
+
     public void Victory()
     {
         victoryPanel.SetActive(true);
+        checkHighScore();
         Time.timeScale = 0;
     }
 
