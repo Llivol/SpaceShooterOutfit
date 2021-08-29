@@ -13,7 +13,7 @@ public class Asteroid : MonoBehaviour
     {
         if (collision.gameObject.tag == "Enemies" || collision.gameObject.tag == "Player")
         {
-            collision.gameObject.GetComponent<Stats>().TakeDamage(stats.Damage);
+            if (collision.gameObject.GetComponent<Stats>()) collision.gameObject.GetComponent<Stats>().TakeDamage(stats.Damage);
         }
     }
 }
