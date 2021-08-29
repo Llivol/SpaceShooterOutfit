@@ -16,23 +16,23 @@ public class PowerUpSpawner : MonoBehaviour
     [SerializeField] private float maxDistance;
     [SerializeField] private float offset;
 
-    void Start()
+    private void Start()
     {
         for (int i = 0; i < amountHealth; i++)
         {
-            var healthUpPowerUp = Instantiate(powerUpHealth, Random.insideUnitSphere * maxDistance + Vector3.one * offset, Random.rotation);
+            var healthUpPowerUp = Instantiate(powerUpHealth, Random.insideUnitSphere * maxDistance + Random.insideUnitSphere * offset, Random.rotation);
             healthUpPowerUp.transform.SetParent(transform);
         }
 
         for (int i = 0; i < amountRecharge; i++)
         {
-            var rechargePowerUp = Instantiate(powerUpRecharge, Random.insideUnitSphere * maxDistance, Random.rotation);
+            var rechargePowerUp = Instantiate(powerUpRecharge, Random.insideUnitSphere * maxDistance + Random.insideUnitSphere * offset, Random.rotation);
             rechargePowerUp.transform.SetParent(transform);
         }
 
         for (int i = 0; i < amountShield; i++)
         {
-            var shieldPowerUp = Instantiate(powerUpShield, Random.insideUnitSphere * maxDistance, Random.rotation);
+            var shieldPowerUp = Instantiate(powerUpShield, Random.insideUnitSphere * maxDistance + Random.insideUnitSphere * offset, Random.rotation);
             shieldPowerUp.transform.SetParent(transform);
         }
     }

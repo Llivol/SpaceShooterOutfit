@@ -6,7 +6,7 @@ public class EnemyMovement : MonoBehaviour
 {
     [SerializeField] private float torque;
     [SerializeField] private float thrust;
-    [SerializeField] private Transform[] waypoints;
+    [SerializeField] private Transform waypointContainer;
     [SerializeField] private float waypointOffset;
     [SerializeField] private float saeftyDistance;
     private Rigidbody rb;
@@ -23,7 +23,7 @@ public class EnemyMovement : MonoBehaviour
     {
         if (!isChasing)
         {
-            target = waypoints[curPoint];
+            target = waypointContainer.GetChild(curPoint);
             if (Vector3.Distance(target.position, transform.position) < waypointOffset) selectNextWaypoint();
         }
 
@@ -48,9 +48,9 @@ public class EnemyMovement : MonoBehaviour
     private void selectNextWaypoint()
     {
         curPoint++;
-        if (curPoint >= waypoints.Length) curPoint = 0;
+        if (curPoint >= waypointContainer.childCount) curPoint = 0;
 
-        target = waypoints[curPoint];
+        target = waypointContainer.GetChild(curPoint);
     }
 
     public void StartChasing(Transform chaseTarget)
