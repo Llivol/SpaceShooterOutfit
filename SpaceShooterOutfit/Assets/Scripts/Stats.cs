@@ -18,6 +18,8 @@ public class Stats : MonoBehaviour
 
     public virtual void TakeDamage(int damage)
     {
+        if (hitPoints <= 0) return;
+        
         hitPoints -= damage;
 
         if (hitPoints <= 0)
