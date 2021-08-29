@@ -25,6 +25,7 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
+        Cursor.visible = false;
         checkEnemiesLeft();
     }
 
@@ -61,6 +62,7 @@ public class GameManager : MonoBehaviour
     {
         gameOverPanel.SetActive(true);
         checkHighScore();
+        Cursor.visible = true;
         Time.timeScale = 0;
     }
 
@@ -68,6 +70,7 @@ public class GameManager : MonoBehaviour
     {
         victoryPanel.SetActive(true);
         checkHighScore();
+        Cursor.visible = true;
         Time.timeScale = 0;
     }
 
@@ -75,6 +78,7 @@ public class GameManager : MonoBehaviour
     {
         isPaused = value;
         pausePanel.SetActive(value);
+        Cursor.visible = value;
         backgroundMusic.volume = (value) ? .2f : .5f;
         Time.timeScale = (value) ? 0 : 1;
     }

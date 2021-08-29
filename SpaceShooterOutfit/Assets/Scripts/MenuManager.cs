@@ -9,6 +9,7 @@ public class MenuManager : MonoBehaviour
     private AsyncOperation loadGameSceneAsync;
     private void Start()
     {
+        Cursor.visible = true;
         highScoreText.text = String.Format("High Score: {0}", PlayerPrefs.GetInt("highscore"));
         loadGameSceneAsync = SceneManager.LoadSceneAsync("GameScene");
         loadGameSceneAsync.allowSceneActivation = false;
