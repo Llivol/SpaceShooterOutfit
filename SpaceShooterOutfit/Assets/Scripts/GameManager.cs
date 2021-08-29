@@ -16,13 +16,10 @@ public class GameManager : MonoBehaviour
 
     private int score;
     private bool isPaused = false;
-    private AsyncOperation loadMenuSceneAsync;
 
     private void Awake()
     {
         if (Instance == null) { Instance = this; }
-        loadMenuSceneAsync = SceneManager.LoadSceneAsync("MenuScene");
-        loadMenuSceneAsync.allowSceneActivation = false;
     }
 
     private void Update()
@@ -77,13 +74,13 @@ public class GameManager : MonoBehaviour
     public void Restart()
     {
         Time.timeScale = 1;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        SceneManager.LoadScene("GameScene");
     }
 
     public void GoToMenu()
     {
         Time.timeScale = 1;
-        loadMenuSceneAsync.allowSceneActivation = true;
+        SceneManager.LoadScene("MenuScene");
     }
 
     public void Exit()
