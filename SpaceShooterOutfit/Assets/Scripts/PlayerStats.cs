@@ -3,10 +3,14 @@ using UnityEngine.UI;
 
 public class PlayerStats : Stats
 {
-    public int MaxAmmo;
     private bool hasShield;
+    public int MaxAmmo;
     private int ammo;
+
+    [Space(10)]
     [SerializeField] private GameObject shield;
+    
+    [Header("UI")]
     [SerializeField] private Slider healthBar;
     [SerializeField] private AmmoContainer ammoContainer;
 
@@ -16,7 +20,7 @@ public class PlayerStats : Stats
     [SerializeField] private AudioClip shieldSfx;
     [SerializeField] private AudioClip breakShieldSfx;
     [SerializeField] private AudioClip rechargeSfx;
-
+    
     [Header("Particles")]
     [SerializeField] private GameObject smokeThin1;
     [SerializeField] private GameObject smokeThin2;

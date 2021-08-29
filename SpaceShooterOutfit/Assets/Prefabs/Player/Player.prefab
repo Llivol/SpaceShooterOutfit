@@ -379,10 +379,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 2
-  maxHitPoints: 100
+  maxHitPoints: 50
   score: 0
-  explosionPrefab: {fileID: 0}
-  MaxAmmo: 100
+  explosionPrefab: {fileID: 8227728198313913948, guid: be5548fc958acac4da9724b635031779, type: 3}
+  MaxAmmo: 50
   shield: {fileID: 1033819699}
   healthBar: {fileID: 0}
   ammoContainer: {fileID: 0}

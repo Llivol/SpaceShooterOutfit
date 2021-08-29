@@ -2,11 +2,14 @@ using UnityEngine;
 
 public class Stats : MonoBehaviour
 {
+    [SerializeField] protected GameObject explosionPrefab;
+
+    [Header("Stats")]
     public int Damage;
     [SerializeField] protected int maxHitPoints;
     [SerializeField] protected int score;
-    [SerializeField] protected GameObject explosionPrefab;
     protected int hitPoints;
+    
 
     protected virtual void Awake()
     {
