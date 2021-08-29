@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject pausePanel;
     [SerializeField] private AudioSource backgroundMusic;
     [SerializeField] private TextMeshProUGUI scoreText;
+    [SerializeField] private TextMeshProUGUI enemiesLeftText;
 
     public static GameManager Instance = null;
 
@@ -22,9 +23,14 @@ public class GameManager : MonoBehaviour
         if (Instance == null) { Instance = this; }
     }
 
+    private void Start()
+    {
+        checkEnemiesLeft();
+    }
+
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape)) 
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
             SetPause(!isPaused);
         }
@@ -40,7 +46,9 @@ public class GameManager : MonoBehaviour
 
     private void checkEnemiesLeft()
     {
-        if (GameObject.FindGameObjectsWithTag("Enemies").Length == 0) Victory();
+        int enemiesLeft = GameObject.FindGameObjectsWithTag("Enemies").Length;
+        enemiesLeftText.text = String.Format("Enemies left: {0}", enemiesLeft);
+        if (enemiesLeft == 0) Victory();
     }
 
     private void checkHighScore()

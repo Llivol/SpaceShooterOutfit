@@ -6,7 +6,7 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] private float maxDistance;
     [SerializeField] private float offset;
     
-    private void Start()
+    private void Awake()
     {
         int enemiesCount = enemyPrefabs.Length;
         for (int i = 0; i < enemiesCount; i++)

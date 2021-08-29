@@ -7,7 +7,7 @@ public class AsteroidSpawner : MonoBehaviour
     [SerializeField] private float maxDistance;
     [SerializeField] private float offset;
 
-    private void Start()
+    private void Awake()
     {
         int asteroidsCount = asteroidPrefabs.Length;
         for (int i = 0; i < amount; i++)

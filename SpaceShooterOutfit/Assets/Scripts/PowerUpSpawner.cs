@@ -16,7 +16,7 @@ public class PowerUpSpawner : MonoBehaviour
     [SerializeField] private float maxDistance;
     [SerializeField] private float offset;
 
-    private void Start()
+    private void Awake()
     {
         for (int i = 0; i < amountHealth; i++)
         {
