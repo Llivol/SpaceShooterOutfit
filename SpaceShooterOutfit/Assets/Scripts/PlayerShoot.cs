@@ -4,7 +4,9 @@ public class PlayerShoot : MonoBehaviour
 {
     [SerializeField] private GameObject bulletPrefab;
     [SerializeField] private Transform[] shootPoints;
+    [SerializeField] private float cooldown;
     private PlayerStats stats;
+    private float timeToShoot = 0;
 
     private void Awake()
     {
@@ -13,12 +15,13 @@ public class PlayerShoot : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetMouseButtonDown(0) && canShoot()) shoot();
+        if (Input.GetAxisRaw("Fire") == 1 && canShoot()) shoot();
+        if (timeToShoot > 0) timeToShoot -= Time.deltaTime;
     }
 
     private bool canShoot()
     {
-        return Time.timeScale > 0 && stats.HasAmmo();
+        return Time.timeScale > 0 && stats.HasAmmo() && timeToShoot <= 0;
     }
 
     private void shoot()
@@ -30,5 +33,6 @@ public class PlayerShoot : MonoBehaviour
             bullet.GetComponent<Laser>().SetShooter(gameObject);
         }
         stats.RemoveAmmo();
+        timeToShoot = cooldown;
     }
 }

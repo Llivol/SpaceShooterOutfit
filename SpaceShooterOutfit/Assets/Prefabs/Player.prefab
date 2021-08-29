@@ -365,6 +365,7 @@ MonoBehaviour:
   - {fileID: 1416398340}
   - {fileID: 2068160480}
   - {fileID: 1504931262}
+  cooldown: 0.2
 --- !u!114 &1266040969
 MonoBehaviour:
   m_ObjectHideFlags: 0
